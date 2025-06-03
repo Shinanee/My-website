@@ -1,0 +1,149 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Contact.css">
+    
+    <title>Cjs</title>
+</head>
+<body>
+     <header id="header">
+    
+    <div class="container">
+      <div> <img src="ou8j5q0jr7cqj72gqscqe7t093-removebg-preview.png" alt="logo" width="59" height="59px"></div>
+      <nav class="nav" id="navMenu">
+        <a href="index.html">Home</a>
+        <a href="About Us.html">About</a>
+        <a href="Services.html">Services</a>         
+        <a href="Blog.html">Blog</a>
+        <a href="Contact.html">Contact</a>
+      </nav>
+      <div class="menu-toggle" id="menuToggle">
+        ☰
+      </div>
+    </div>
+  </header> 
+<script>
+// Scroll hide/show logic
+let prevScroll = window.pageYOffset;
+const header = document.getElementById('header');
+
+window.onscroll = () => {
+  const currentScroll = window.pageYOffset;
+  if (prevScroll > currentScroll) {
+    header.style.top = "0";
+  } else {
+    header.style.top = "-100px";
+  }
+  prevScroll = currentScroll;
+};
+
+// Mobile menu toggle
+const menuToggle = document.getElementById('menuToggle');
+const navMenu = document.getElementById('navMenu');
+
+menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+});
+
+</script>
+
+
+<section class="banner">
+        <h1>Contact Us</h1>
+        <p>Reach our global teams and our partners from different countries across the world</p>
+      </section>
+   
+      <!-- Contact Info -->
+      <section class="contact-details">
+      
+        <h2>Get In Touch</h2>
+        <p><strong>Contact Number:</strong> +91 9891645536</p>
+        <p><strong>Email ID:</strong> shivaneerathaur78@gmail.com</p>
+        <p><strong>Location</strong>House No.793,I block jahangirpuri Dehli - 110033</p>
+      </section>
+    
+      <!-- Contact Form -->
+      <section class="form-container">
+        <form>
+          <div class="form-group">
+            <label>Name*</label>
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <label>Email*</label>
+            <input type="email" placeholder="example@email.com" required />
+          </div>
+          <div class="form-group">
+            <label>Contact Number*</label>
+            <input type="tel" placeholder="Your Contact Number" required />
+          </div>
+          <div class="form-group">
+            <label>Your Message*</label>
+            <textarea rows="5" placeholder="Your Message Here" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
+    
+      <!-- Google Map -->
+      <section class="map">
+        <iframe 
+          src="https://www.google.com/maps?Main, Jahangirpuri Rd, Block K, Block A, Jahangirpuri, Delhi, 110033,+New+Delhi,+Delhi,+110015&output=embed"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </section>
+
+
+
+      <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Business Info -->
+    <div class="footer-section about">
+      <h2>Website Developer</h2>
+      <p>Crafts responsive and visually appealing websites tailored to your brand.</p>
+      <p>Specializes in front-end and back-end development for seamless user experiences.</p>
+      <p>Delivers fast, secure, and SEO-optimized websites to grow your online presence.</p>
+    </div>
+
+    <!-- Quick Links -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+       
+      </ul>
+    </div>
+
+    <!-- Contact Details -->
+    <div class="footer-section contact">
+     <h3>Location & Contact</h3>
+       <a href="#"></a></li>
+      
+      <p>🏠 House No. 793, I Block, <br>Jahangirpuri, Delhi - 110033</p>
+      <p>📞 <a href="tel:+9891645536">+91 9891645536</a></p>
+      <p>✉️ <a href="mailto:shivaneerathaur78@gmail.com">shivaneerathaur78@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Website Developer By Shivanee</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+      
+   
+
+</body>
+</html>
