@@ -105,6 +105,35 @@
   
 
 
+<!-- Font Awesome for Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<!-- Right Side / Bottom Buttons -->
+<div class="right-buttons">
+  <a href="tel:919891645536" class="contact" title="Contact"><i class="fas fa-phone"></i></a>
+  <a href="https://wa.me/919891645536" target="_blank" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="#" class="enquire" title="Enquire" onclick="toggleForm()"><i class="fas fa-file-alt"></i></a>
+</div>
+
+<!-- Enquire Form Modal -->
+<div class="enquire-form" id="enquireForm">
+  <div class="form-box">
+    <span class="close-btn" onclick="toggleForm()">&times;</span>
+    <h2>Enquire Now</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  function toggleForm() {
+    document.getElementById("enquireForm").classList.toggle("active");
+  }
+</script>
 
 
   
