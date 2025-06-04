@@ -232,6 +232,134 @@ body {
  
 
 
+.right-buttons {
+  position: fixed;
+  top: 40%;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 999;
+}
+
+.right-buttons a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.right-buttons a.contact {
+  background-color: #007bff;
+}
+.right-buttons a.whatsapp {
+  background-color: #25D366;
+}
+.right-buttons a.enquire {
+  background-color: #dc3545;
+}
+
+.right-buttons a:hover {
+  background-color: #be1e1e;
+  transform: scale(1.05);
+}
+
+/* On mobile: bottom center layout */
+@media screen and (max-width: 768px) {
+  .right-buttons {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px 0;
+    background: #004aad;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.15);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .right-buttons a {
+    margin: 0 10px;
+  }
+}
+
+/* Enquire Form Modal */
+.enquire-form {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+.enquire-form.active {
+  display: flex;
+}
+
+.form-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  position: relative;
+}
+
+.form-box h2 {
+  margin-top: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-family: Arial, sans-serif;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  background: #be1e1e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-box button:hover {
+  background: #a31313;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+}
 
 
 
