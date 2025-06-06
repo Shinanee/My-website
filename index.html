@@ -1,191 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="Style.css">
-    <title>Cjs</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAK LED Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="Styles.css">
+  <script src="javascript.js"></script>
 </head>
 <body>
-  <header id="header">
+  <header class="header">
     <div class="container">
-      <div> <img src="ou8j5q0jr7cqj72gqscqe7t093-removebg-preview.png" alt="logo" width="59" height="59px"></div>
-      <nav class="nav" id="navMenu">
-        <a href="index.html">Home</a>
-        <a href="About Us.html">About</a>
-        <a href="Services.html">Services</a>         
+      <div class="left-section">
+        <img src="company logo.png" alt="Company Logo" class="logo" />
+        <div class="social-icons">
+          <a href="https://web.whatsapp.com/" target="_blank">
+            <img src="download-removebg-preview.png" alt="WhatsApp" />
+          </a>
+          <a href="https://www.linkedin.com/company/rak-led-displays/" target="_blank">
+            <img src="linkedin (1).jpg" alt="LinkedIn" />
+          </a>
+           <a href="https://www.instagram.com/rak_led_displays/" target="_blank">
+            <img src="Instagram_icon.png" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="13051733.png" alt="Facebook" />
+          </a>
+          <a href="https://www.youtube.com/@RAKLEDsolutions" target="_blank">
+            <img src="youtube-small-icon-9-removebg-preview.png" alt="youtube" />
+            
+          </a>
+        </div>
+      </div>
 
+      <nav class="nav" id="nav">
+        <a href="index.html">Home</a>
+        <a href="About.html">About</a>
+        <div class="dropdown">
+          <a href="Products.html" class="dropbtn">Products</a>
+          <ul class="dropdown-content">
+             <li><a href="Leddsisplayscreen.html">LED Display Screen</a></li>
+                  <li><a href="Facadelightsolution.html">Facade Light Solution</a></li>
+                  <li><a href="Digitalstandee.html">Digital Standee</a></li>
+                  <li><a href="Transparentledscreen.html">Transparent LED Screen</a></li>
+                  <li><a href="Interactivefloor.html">Interactive Floor</a></li>
+                  <li><a href="Flexibleleddisplayscreen.html">Flexible LED Display Screen</a></li>
+                  <li><a href="Rentalleddisplay.html">Rental LED Display</a></li>
+                 <li><a href="Floorledscreen.html">Floor LED Screen</a></li>
+                  <li><a href="Customizedleddisplayscreen.html">Customized LED Display Screen</a></li>
+          </ul>
+        </div>
+        <a href="Services.html">Services</a>
+        <a href="Blog.html">Blog</a>
         <a href="Contact.html">Contact</a>
-      </nav>    
-      <div class="menu-toggle" id="menuToggle">
-        ☰
+      </nav>
+
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
       </div>
     </div>
   </header>
 
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const menuToggle = document.getElementById('menu-toggle');
+      const nav = document.getElementById('nav');
 
- <section class="hero">
-    <div class="hero-content">
-      <div class="avatar" id="avatar"></div>
-      <h1>Hi, I’m Shivanee, a Websites Developer</h1>
-      <p>I create beautiful and functional websites using modern technologies.</p>
-      <div class="cta-buttons">
-        <a href="Services.html" class="btn">View Portfolio</a>
-        <a href="Contact.html" class="btn outline">Hire Me</a>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-    <span></span>
-    </div>
-  </section>
-                                    
-  <script src="script.js"></script>
-
-
-   
-
-
-  <div class="card-container">
-    <!-- Card 1 -->
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          <img src="wptdtnwjusi5ld2wwpxf (1).png" alt="Website Dev">
-        </div>
-        <div class="card-back">
-          <h3>Website Developer</h3>
-          <p><strong>RAK LED Solutions</strong><br>Present</p>
-          <p>Maintaining and managing the company website for optimal performance and usability.</p>
-        </div>
-      </div>
-    </div>
-
-   <!-- Card 2 -->
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          <img src="seo-services-dubai.jpg" alt="Post Upload">
-        </div>
-        <div class="card-back">
-          <h3>Search engine optimisation</h3>
-          <p>Uploading and managing posts on the website and social media platforms.</p>
-        </div>
-      </div>
-    </div>
+      menuToggle.addEventListener('click', function () {
+        nav.classList.toggle('active');
+      });
+    });
+  </script>
     
 
-    <!-- Card 3 -->
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          <img src="out-door-e1738577622679.jpeg" alt="Post Upload">
-        </div>
-        <div class="card-back">
-          <h3>Content Posting</h3>
-          <p>Uploading and managing posts on the website and social media platforms.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Card 4 -->
-    <div class="card">
-      <div class="card-inner">
-        <div class="card-front">
-          <img src="digital-paper-wireframe-designs-web-260nw-2312730939.jpg" alt="UX Content">
-        </div>
-        <div class="card-back">
-          <h3>User Experience</h3>
-          <p>Enhancing user experience with visually appealing and easy-to-navigate web content.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  
 
 
-<!-- Font Awesome for Icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-<!-- Right Side / Bottom Buttons -->
-<div class="right-buttons">
-  <a href="tel:919891645536" class="contact" title="Contact"><i class="fas fa-phone"></i></a>
-  <a href="https://wa.me/919891645536" target="_blank" class="whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-  <a href="#" class="enquire" title="Enquire" onclick="toggleForm()"><i class="fas fa-file-alt"></i></a>
-</div>
-
-<!-- Enquire Form Modal -->
-<div class="enquire-form" id="enquireForm">
-  <div class="form-box">
-    <span class="close-btn" onclick="toggleForm()">&times;</span>
-    <h2>Enquire Now</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Submit</button>
-    </form>
-  </div>
-</div>
-
-<script>
-  function toggleForm() {
-    document.getElementById("enquireForm").classList.toggle("active");
-  }
-</script>
-
-
-  
-  
-
-  
-
-   <footer class="footer">
-  <div class="footer-container">
-
-    <!-- Business Info -->
-    <div class="footer-section about">
-      <h2>Website Developer</h2>
-      <p>Crafts responsive and visually appealing websites tailored to your brand.</p>
-      <p>Specializes in front-end and back-end development for seamless user experiences.</p>
-      <p>Delivers fast, secure, and SEO-optimized websites to grow your online presence.</p>
-    </div>
-
-    <!-- Quick Links -->
-    <div class="footer-section links">
-      <h3>Quick Links</h3>
-      <ul>
-      <li><a href="index.html">Home</a></li>
-        <li><a href="About Us.html">About</a></li>
-        <li><a href="Services.html">Services</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-       
-      </ul>
-    </div>
-
-    <!-- Contact Details -->
-    <div class="footer-section contact">
-     <h3>Location & Contact</h3>
-       <a href="#"></a></li>
-      
-      <p>🏠 House No. 793, I Block, <br>Jahangirpuri, Delhi - 110033</p>
-      <p>📞 <a href="tel:+9891645536">+91 9891645536</a></p>
-      <p>✉️ <a href="mailto:shivaneerathaur78@gmail.com">shivaneerathaur78@gmail.com</a></p>
-    </div>
-
-  </div>
-
-  <div class="footer-bottom">
-    <p>&copy; <span id="year"></span> Website Developer By Shivanee</p>
-  </div>
-</footer>
-
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-      
+  <section class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+      <source src="InShot_20250329_164816356 (1).mp4" type="video/mp4">
+    </video>
    
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      
+      <div class="hero-buttons">
+        <a href="#" class="btn-primary"></a>
+        <a href="#" class="btn-secondary"></a>
+      </div>
+    </div>
+  </section>
+    
+ 
+
+
+
+  <section class="why-choose">
+
+<h1> <center> <strong> <h1> Why Choose RAK LED Solutions ?</h1></strong> </center> </h1>
+    <!-- Extensive Product Range -->
+    <div class="feature-block bg-extensive">
+      <div class="overlay">
+        <h2>📦 Extensive LED Product Range with Customized Solutions</h2>
+        <img src="03-20109810416472.jpg" alt="img" width="900px" height="500px">
+        <p>
+          RAK LED Solutions offers a diverse selection of LED products, from indoor and outdoor displays to specialized items like Kinetic LED Screens and Interactive Floors with an expert and experienced technical team.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Trusted Brand -->
+    <div class="feature-block bg-trusted">
+      <div class="overlay">
+        <h2>🏅 Trusted Brand with Proven Expertise</h2>
+        <img src="20130602_145720.jpg" alt="img" width="900px" height="500px">
+        <p>
+          RAK LED Solutions offers a diverse selection of LED products, from indoor and outdoor displays to specialized items like Kinetic LED Screens and Interactive Floors with an expert and experienced technical team.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Online Support -->
+    <div class="feature-block bg-support">
+      <div class="overlay">
+        <h2>🛠 Online Customer Support</h2>
+        <img src="Screenshot-2024-11-27-161421.png" alt="img" width="900px" height="500px">
+        <p>
+          We are the only Company in the industry to provide complimentary online support even beyond the warranty period at no additional cost.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Technical Drawings -->
+    <div class="feature-block bg-drawings">
+      <div class="overlay">
+        <h2>📐 On-Demand Technical Drawings</h2>
+        <img src="Screenshot-2024-11-27-161716.png" alt="img" width="900px" height="500px">
+        <p>
+          We are the only Company in the industry to provide precise electrical and structural drawings on demand for tailored technical support and that too at no additional cost.
+        </p>
+      </div>
+    </div>
+  </section>
+  <div class="led-marquee">                   
+    <div class="marquee-content">
+    <span><a href="Flexibleleddisplayscreen.html">FLEXIBLE LED SCREEN</a></span>  
+      <span><a href="Leddsisplayscreen.html">INDOOR LED SCREEN</a></span>
+      <span><a href="Leddsisplayscreen.html">Outdoor LED SCREEN</a></span>
+      <span><a href="Transparentledscreen.html">TRANSPARENT LED SCREEN</a></span>
+      <span><a href="Interactivefloor.html">FLOOR LED SCREEN</a></span>
+      <span><a href="Facadelightsolution.html"> Facade Light Solution</a></span>
+      <span><a href="Customizedleddisplayscreen.html">Customized LED Display Screen</a></span>
+      <span><a href="Digitalstandee.html">Digital Standee</a></span>
+    </div>
+  </div>
+
+   
+
+  <section class="video-gallery">
+    <h2>Video Gallery</h2>
+    <div class="video-grid">
+      <div class="video-item">
+        <iframe src="InShot_20241028_170126827.mp4" title="Video 1" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe src="InShot_20250327_170307761.mp4" title="Video 2" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <iframe src="InShot_20250405_150512388 (1).mp4" title="Video 3" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+                                                                                                                                     
+
+<!--
+  <section class="projects-section">
+    <h2>Featured Projects</h2>
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="commercial">Commercial</button>
+      <button class="filter-btn" data-filter="residential">Residential</button>
+      <button class="filter-btn" data-filter="retail">Retail</button>
+      <button class="filter-btn" data-filter="industrial">Industrial</button>
+    </div>
+  
+    <div class="project-grid">
+      <div class="project-item commercial">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="project-info">
+          <h3>LED Mall Facade</h3>
+          <p>Dubai, UAE | Facade Lighting</p>
+        </div>
+      </div>
+      <div class="project-item residential">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="project-info">
+          <h3>Smart Home Display</h3>
+          <p>London, UK | Indoor LED Screen</p>
+        </div>
+      </div>
+      <div class="project-item retail">
+        <img src="project3.jpg" alt="Project 3">
+        <div class="project-info">
+          <h3>Fashion Store Video Wall</h3>
+          <p>Paris, France | LED Video Wall</p>
+        </div>
+      </div>
+      <div class="project-item industrial">
+        <img src="project4.jpg" alt="Project 4">
+        <div class="project-info">
+          <h3>Factory Info Screen</h3>
+          <p>Mumbai, India | Digital Standee</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="portfolio-cta">
+      <a href="#" class="view-portfolio">View Full Portfolio</a>
+    </div>
+  </section>
+
+-->
+
+
+<section class="case-studies-rotate">
+
+  <h2>Case Studies</h2>
+  
+  <div class="case-scroll-wrapper">
+    <div class="case-scroll-track">
+      <div class="case-box">
+        <h3>Indoor LED Screen –</h3>
+        <img src="WhatsApp Image 2025-02-14 at 4.00.43 PM.jpg" alt="img" width="600px" height="300px">
+        <p>An indoor LED screen is a high-brightness, high-resolution <br> 
+          display designed for use inside buildings. They are <br>
+          commonly used for advertising,  presentations, <br>
+          entertainment,and informational displays.
+         </p>
+      </div>
+      <div class="case-box">
+        <h3> Kinetic Screens in Dehli – </h3>
+        <img src="IMG_20250325_142851 (1).jpg" alt="img" width="600px" height="300px">
+        <p>These are screens or panels that move to form shapes, patterns,
+           or animations. <br>
+          Often used in digital art installations or interactive exhibits. <br>
+          Sometimes they use motors or servos to shift parts around. <br></p>
+      </div>
+      <div class="case-box">
+        <h3> Real-time data-bus System – </h3>
+        <img src="WhatsApp Image 2025-02-11 at 3.11.54 PM (1).jpg" alt="img" width="600px" height="300px">
+        <p>
+          	Real-time data transmission with low. <br>
+            Scalability to handle multiple screens. <br>
+          	Synchronization of data across all. <br>
+          	Robust error handling and fault tolerance. <br>
+          </p>
+      </div>
+      <div class="case-box">
+        <h3>Outdoor LED Screen – </h3>
+        <img src="20230105_180001.jpg" alt="img" width="600px" height="300px">
+        <p>An Outdoor LED Screen is a bright, <br>
+           weather-resistant display used for <br>
+           advertising, events, and public messages. <br></p>
+      </div>
+      <!-- Duplicate for infinite scroll illusion -->
+      <div class="case-box">
+        <h3> Facade light Solution – </h3>
+        <img src="outdoor-architecture.jpg" alt="img" width="600px" height="300px">
+        <p>Brighten your facade with cutting-edge LED lighting. <br>
+          Designed to enhance, built to endure. <br>
+          Architectural lighting that makes a bold statement. <br>
+          Seamless design, superior performance. <br>
+          </p>
+      </div>
+      <div class="case-box">
+        <h3>Flexible LED Display Screen – </h3>
+        <img src="20240303_120935.jpg" alt="img" width="600px" height="300px">
+        <p>Flex your creativity with bendable LED screens. <br>
+          Designed for curves, corners, and custom shapes. <br>
+          Seamless visuals on any surface. <br>
+          Flexible LED screens for standout designs. <br>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section class="help-section">
+    <h2>How Can We Help You?</h2>
+
+    <div class="help-card" onclick="toggleContent()">
+      <img src="WhatsApp Image 2025-03-17 at 1.40.16 AM (1).jpg" alt="Help Image" />
+      <div class="help-content" id="helpContent">
+        <h3>Rental Series LED Screens</h3>
+        <p>High-performance display solutions perfect for events, exhibitions, and temporary installations. Easy to install, vibrant in clarity, and built for impact.</p>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleContent() {
+      const content = document.getElementById("helpContent");
+      content.classList.toggle("active");
+    }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+      <footer class="footer">
+        <div class="footer-container">
+          <!-- About Section -->
+          <div class="footer-column">
+            <h3>About RAK LED Solutions</h3>
+            <p>
+              RAK LED Solutions is a rapidly growing company <br>
+              in the LED Advertising and Display markets. <br>
+              In addition to exclusive consultancy, <br>
+              customization, and sales, we are the only <br>
+              company offering after-sales service for <br>
+              multiple brands through a team of specially <br>
+             trained engineers — even for existing users.
+            </p>
+          </div>
+      
+          <!-- Quick Links -->
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="About.html">About</a></li>
+              <li><a href="Products.html">Products</a></li>
+              <li><a href="Services.html">Services</a></li>
+              <li><a href="Blog.html">Blog</a></li>
+              <li><a href="Contact.html">Contact</a></li>
+            </ul>
+          </div>
+      
+          <!-- Products -->
+          <div class="footer-column">
+            <h3>Products</h3>
+            <ul>
+              <li><a href="#">Indoor LED Screen</a></li>
+              <li><a href="#">Outdoor LED Screen</a></li>
+              <li><a href="#">Digital Standy</a></li>
+              <li><a href="#">Transparent LED Screen</a></li>
+              <li><a href="#">Rental Series LED Screen</a></li>
+              <li><a href="#">Facade Lighting</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contact Info -->
+          <div class="footer-column">
+            <h3>Location & Contact</h3>
+            <p>Ground Floor, FA-332A, Block E,<br>Mansarover Garden, New Delhi, Delhi - 110015</p>
+            <p>📞 <a href="tel:+917683059081">+91 768-305-9081</a></p>
+            <p>✉️ <a href="mailto:sales.rakled@gmail.com">sales.rakled@gmail.com</a></p>
+          </div>
+        </div>
+      
+        <div class="footer-bottom">
+          <p>&copy; RAK LED Solutions — All Rights Reserved</p>
+        </div>
+      </footer>
+      
+      
+      </body>
+      </html>
+
+
+
+
+
+
+<!-- Slider Script -->
+<script>
+  const slides = document.querySelectorAll(".slide");
+  let index = 0;
+
+  setInterval(() => {
+    slides.forEach((slide, i) => {
+      slide.style.opacity = i === index ? "1" : "0";
+    });
+    index = (index + 1) % slides.length;
+  }, 5000); // 5 seconds per slide
+</script>
+
+
+
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav');
+  
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+  </script>
+
 
 
 
